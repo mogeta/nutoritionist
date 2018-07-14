@@ -7,17 +7,24 @@ import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import {AngularFirestoreModule} from "angularfire2/firestore";
 import {AngularFireAuthModule} from "angularfire2/auth";
+import { StressSliderComponent } from './stress-slider/stress-slider.component';
+
+
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginButtonComponent
+    LoginButtonComponent,
+    StressSliderComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
+
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
