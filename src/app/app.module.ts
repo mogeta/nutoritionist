@@ -9,8 +9,9 @@ import {AngularFirestoreModule} from "angularfire2/firestore";
 import {AngularFireAuthModule} from "angularfire2/auth";
 import { StressSliderComponent } from './stress-slider/stress-slider.component';
 
-
-import {MatSliderModule} from '@angular/material/slider';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSliderModule}   from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import {MatSliderModule} from '@angular/material/slider';
     AngularFirestoreModule,
     AngularFireAuthModule,
 
+    BrowserAnimationsModule,
     MatSliderModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
