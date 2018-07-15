@@ -7,6 +7,8 @@ import {MatSliderModule}   from '@angular/material/slider';
 })
 export class StressSliderComponent implements OnInit {
 
+  public stressValue = 50;
+
   constructor() { }
 
   ngOnInit() {
@@ -14,6 +16,7 @@ export class StressSliderComponent implements OnInit {
 
   changeStressParameter(e){
     console.log(e);
+    console.log(this.stressValue);
   }
 
 }
