@@ -12,4 +12,8 @@ export class StressSliderComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeStressParameter(e){
+    console.log(e);
+  }
+
 }
