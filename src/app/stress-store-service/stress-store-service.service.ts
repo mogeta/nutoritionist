@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {AngularFirestore} from "angularfire2/firestore";
-import {firebase} from '@firebase/app';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +10,8 @@ export class StressStoreServiceService {
   }
 
   public Add(value) {
-    const timestamp = firebase.firestore.FieldValue.serverTimestamp();
+
+    const timestamp = new Date();
     return this.db.collection("stress").add({
       created_at: timestamp,
       parameter: value

@@ -16,13 +16,15 @@ import {MatSliderModule}   from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule } from './/app-routing.module';
 import { DailyReportComponent } from './daily-report/daily-report.component';
+import { SimpleListComponent } from './simple-list/simple-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginButtonComponent,
     StressSliderComponent,
-    DailyReportComponent
+    DailyReportComponent,
+    SimpleListComponent
   ],
   imports: [
     BrowserModule,
