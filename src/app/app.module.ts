@@ -19,13 +19,18 @@ import {DailyReportComponent} from './daily-report/daily-report.component';
 import {SimpleListComponent} from './simple-list/simple-list.component';
 import {MatTableModule} from '@angular/material';
 
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+import { ChartPageComponent } from './chart-page/chart-page.component';
+
+
 @NgModule({
 	declarations: [
 		AppComponent,
 		LoginButtonComponent,
 		StressSliderComponent,
 		DailyReportComponent,
-		SimpleListComponent
+		SimpleListComponent,
+		ChartPageComponent
 	],
 	imports: [
 		BrowserModule,
@@ -40,6 +45,8 @@ import {MatTableModule} from '@angular/material';
 		MatButtonModule,
 		MatTableModule,
 		AppRoutingModule,
+
+		Ng2GoogleChartsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
