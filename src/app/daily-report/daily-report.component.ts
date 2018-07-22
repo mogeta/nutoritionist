@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {StressStoreServiceService} from '../stress-store-service/stress-store-service.service';
 
 @Component({
   selector: 'app-daily-report',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DailyReportComponent implements OnInit {
 
-  constructor() { }
+  constructor(public db: StressStoreServiceService) { }
 
   ngOnInit() {
   }
