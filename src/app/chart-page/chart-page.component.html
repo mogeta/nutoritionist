@@ -1,4 +1,12 @@
-<p>
-  chart-page works!
-</p>
-<google-chart [data]="pieChartData"></google-chart>
+<ngx-charts-bar-vertical
+	[view]="view"
+	[results]="sampleData"
+	[gradient]="gradient"
+	[xAxis]="showXAxis"
+	[yAxis]="showYAxis"
+	[legend]="showLegend"
+	[showXAxisLabel]="showXAxisLabel"
+	[showYAxisLabel]="showYAxisLabel"
+	[xAxisLabel]="xAxisLabel"
+	[yAxisLabel]="yAxisLabel">
+</ngx-charts-bar-vertical>

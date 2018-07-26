@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import {AppComponent} from './app.component';
 import {LoginButtonComponent} from './login-button/login-button.component';
@@ -36,6 +36,7 @@ import { ChartPageComponent } from './chart-page/chart-page.component';
 		BrowserModule,
 		FormsModule,
 		ReactiveFormsModule,
+		NgxChartsModule,
 		AngularFireModule.initializeApp(environment.firebase),
 		AngularFirestoreModule,
 		AngularFireAuthModule,
