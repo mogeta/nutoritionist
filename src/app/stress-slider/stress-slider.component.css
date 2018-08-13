@@ -1,0 +1,6 @@
+.hoge {
+  color: #f00;
+}
+.hoge:hover {
+  color: #00f;
+}
